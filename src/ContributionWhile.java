@@ -17,7 +17,7 @@ public class ContributionWhile {
         int term = in.nextInt();
         in.close();
 
-        while (term != 0){
+        while (term != 0) {
             contribution *= 1.07;
             term--;
         }

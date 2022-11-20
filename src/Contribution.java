@@ -17,7 +17,7 @@ public class Contribution {
         int term = in.nextInt();
         in.close();
 
-        for (int i = 0; i < term; i++){
+        for (int i = 0; i < term; i++) {
             contribution *= 1.07;
         }
 
