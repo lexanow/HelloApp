@@ -13,8 +13,8 @@ public class MetanitCycle2 {
         int born = 14;
         int death = 8;
 
-        for (int i = 1; i !=10; i++) {
-            pop += (pop/1000) * (born - death);
+        for (int i = 1; i != 10; i++) {
+            pop += (pop / 1000) * (born - death);
             while (born != 7) {
                 born--;
             }

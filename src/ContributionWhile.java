@@ -5,6 +5,7 @@
 
 Для вычисления суммы с учетом процентов используйте цикл while. Пусть сумма вклада будет представлять тип float.
  */
+
 import java.util.Scanner;
 
 public class ContributionWhile {

@@ -11,7 +11,7 @@ public class MetanitCycle1 {
         int death = 8;
 
         for (int i = 1; i != 10; i++) {
-            pop += (pop/1000) * (born - death);
+            pop += (pop / 1000) * (born - death);
         }
         System.out.println("За 10 лет население достигнет " + pop + " человек");
     }
