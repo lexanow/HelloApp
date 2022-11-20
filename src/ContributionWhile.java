@@ -3,11 +3,11 @@
 в которую пользователь вводит сумму вклада и количество месяцев. А банк вычисляет конечную сумму
 вклада с учетом начисления процентов за каждый месяц.
 
-Для вычисления суммы с учетом процентов используйте цикл for. Пусть сумма вклада будет представлять тип float.
+Для вычисления суммы с учетом процентов используйте цикл while. Пусть сумма вклада будет представлять тип float.
  */
 import java.util.Scanner;
 
-public class Contribution {
+public class ContributionWhile {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -17,8 +17,9 @@ public class Contribution {
         int term = in.nextInt();
         in.close();
 
-        for (int i = 0; i < term; i++){
+        while (term != 0){
             contribution *= 1.07;
+            term--;
         }
 
         System.out.println("Сумма вклада за " + term + " месяцев равна " + contribution);
