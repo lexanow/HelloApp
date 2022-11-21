@@ -15,10 +15,10 @@ public class MetanitCycle2 {
 
         for (int i = 1; i != 10; i++) {
             pop += (pop / 1000) * (born - death);
-            while (born != 7) {
+            if (born != 7) {
                 born--;
             }
-            while (death != 6) {
+            if (death != 6) {
                 death--;
             }
         }
