@@ -17,11 +17,11 @@ public class Factorial {
         }
         in.close();
 
-        int b = 1;
+        int factorial = 1;
         for (int i = 1; a > 0; a--, i++) {
-            b = b * i;
+            factorial = factorial * i;
         }
 
-        System.out.print("a! = " + b);
+        System.out.print("a! = " + factorial);
     }
 }

@@ -21,12 +21,12 @@ public class SumDigit {
         // Переменная s имеет значение равное a только ввиде строки текста.
         // В цикле будем получать значения из s, преобразовывать в int и суммировать
         char chA;
-        int digA;
+        //int digA;
         int sum = 0;
         for (int i = 0; i < len; i++) {
             chA = s.charAt(i);
-            digA = Character.digit(chA, 10);
-            sum += digA;
+            sum += Character.digit(chA, 10);
+            //sum += digA;
         }
 
         System.out.println("Сумма цифр введённого числа равна " + sum);
