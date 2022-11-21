@@ -12,7 +12,7 @@ public class Factorial {
         int a = in.nextInt();
         //Если отрицательное, просим повторить ввод
         while (a < 0) {
-            System.out.print("Должно быть > 0: ");
+            System.out.print("Не может быть меньше 0: ");
             a = in.nextInt();
         }
         in.close();
