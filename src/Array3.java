@@ -35,9 +35,9 @@ public class Array3 {
         int sum = 0;
 
         for (int i : intArray) { // Считаем сумму всех элементов массива
-
             sum += i;
         }
+
         System.out.println(sum);
     }
 }
