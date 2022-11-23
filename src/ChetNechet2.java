@@ -10,6 +10,7 @@
  */
 
 import java.util.Scanner;
+
 public class ChetNechet2 {
     public static void main(String[] args) {
 
@@ -20,9 +21,11 @@ public class ChetNechet2 {
 
         for (int i = 1; i <= 10; i++) { //Внешний цикл работы с числами 1 - 10
 
-            if (i % 2 == 0) {           //Чёт/нечет
-                System.out.println(i + a);
+            if (i == a) {
+                System.out.println("Числа равны!");
 
+            } else if (i % 2 == 0) {
+                System.out.println(i + a);
             } else {
                 System.out.println(i - a);
             }

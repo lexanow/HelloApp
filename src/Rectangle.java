@@ -10,34 +10,32 @@ public class Rectangle {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите длину прямоугольника l: ");
-        int l = Math.abs(in.nextInt());
-        System.out.print("Введите ширину прямоугольника w: ");
-        int w = Math.abs(in.nextInt());
+        System.out.print("Введите длину прямоугольника: ");
+        int rectLength = in.nextInt();
+        System.out.print("Введите ширину прямоугольника: ");
+        int rectWidth = in.nextInt();
         in.close();
 
-        String RectLine = "";
-        for (int wi = 1; wi <= w; wi++) { //Внешний цикл для вывода строк
+        // Создаем линии
+        String rectLineEdge = "*"; //Первый элемент линии
+        String rectLineMid = "|";
 
-            if (wi == 1 ^ wi == w) { //Условие для определения типа строки: первая/последняя, внутренняя
-                RectLine = "*";
-                for (int li = 2; li < l; li++) { //Цикл для заполнения строки
-                    RectLine += "-";
-                }
-                RectLine += "*";
-
-                System.out.println(RectLine);
-
-            } else {
-                RectLine = "|";
-                for (int li = 2; li < l; li++) { //Цикл для заполнения строки
-                    RectLine += " ";
-                }
-                RectLine += "|";
-
-                System.out.println(RectLine);
-            }
+        for (int i = 2; i < rectLength; i++) { //Внутренняя часть линий
+            rectLineEdge += "-";
+            rectLineMid += " ";
         }
+
+        rectLineEdge += "*";
+        rectLineMid += "|"; //Последний элемент линии
+
+        System.out.println(rectLineEdge); //Выводим первую линию
+
+        for (int i = 2; i != rectWidth; i++) {
+            System.out.println(rectLineMid);  //Выводим внутренние линии
+        }
+
+        System.out.println(rectLineEdge); //Выводим последнюю линию
+
     }
 }
 
