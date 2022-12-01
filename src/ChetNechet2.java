@@ -22,6 +22,7 @@ public class ChetNechet2 {
         for (int i = 1; i <= 10; i++) { //Внешний цикл работы с числами 1 - 10
 
             if (i == a) {
+                System.out.println(i + a);
                 System.out.println("Числа равны!");
 
             } else if (i % 2 == 0) {

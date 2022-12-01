@@ -17,15 +17,15 @@ public class Rectangle {
         in.close();
 
         // Создаем линии
-        String rectLineEdge = "*"; //Первый элемент линии
+        String rectLineEdge = " "; //Первый элемент линии
         String rectLineMid = "|";
 
-        for (int i = 2; i < rectLength; i++) { //Внутренняя часть линий
+        for (int i = 1; i <= rectLength; i++) { //Внутренняя часть линий
             rectLineEdge += "-";
             rectLineMid += " ";
         }
 
-        rectLineEdge += "*";
+        //rectLineEdge += " ";
         rectLineMid += "|"; //Последний элемент линии
 
         System.out.println(rectLineEdge); //Выводим первую линию
